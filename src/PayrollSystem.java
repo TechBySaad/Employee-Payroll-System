@@ -25,7 +25,7 @@ public class PayrollSystem {
     }
 
     public void displayEmployees(){
-        for (Employees emplyee : employeesList) {
+        for (Employee emplyee : employeesList) {
             System.out.println(emplyee);
         }
 

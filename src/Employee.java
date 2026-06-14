@@ -1,10 +1,12 @@
 public abstract class Employee {
     private String name;
     private int id;
+    private String job;
 
-    public Employee(String name, int id){
+    public Employee(String name, int id, String job){
         this.name = name;
         this.id = id;
+        this.job = job;
     }
 
     //getter method
@@ -14,17 +16,15 @@ public abstract class Employee {
     public int getId(){
         return id;
     }
+    public String getJob(){
+        return job;
+    }
+
     //abstract method
     abstract double calculateSalary();
-    //setter method
-//    public void setName(String name){
-//        this.name = name;
-//    }
-//    public void setId(int id){
-//        this.id = id;
-//    }
+
     @Override
     public String toString(){
-        return "Employee[Name: "+name+", id: "+ id + ", salary: "+ calculateSalary()+ "]";
+        return "Employee[Name: "+name+", ID: "+ id +", Job: "+ job+ ", Salary: "+ calculateSalary()+ "]";
     }
 }

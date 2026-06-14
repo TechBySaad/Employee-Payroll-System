@@ -1,15 +1,21 @@
 # Employee Payroll System
 
-A Java-based payroll system built to demonstrate Object-Oriented Programming concepts.
+A Java-based payroll system with interactive menu, built to demonstrate Object-Oriented Programming concepts.
 
 ## Features
 
-- Add/Remove employees (Full-time & Part-time)
-- Process monthly payroll with tax deductions (20% tax, 5% pension, $500 insurance)
-- Generate pay slips for each employee
-- Track attendance and overtime (1.5x rate for part-time)
-- Save/Load employee data from files
-- Generate monthly and department-wise reports
+- Interactive menu (Add/Remove/Display/Process Payroll)
+- Full-time (fixed salary) & Part-time employees (hourly rate)
+- Monthly payroll with tax deductions (20% tax, 5% pension, $500 insurance)
+- Printable pay slips for each employee
+- Attendance and overtime tracking (1.5x rate for part-time)
+- Save/Load employee data from files automatically
+- Monthly and department-wise reports
+
+## How to Run
+
+javac *.java
+java Main
 
 ## Project Files
 
@@ -23,7 +29,7 @@ A Java-based payroll system built to demonstrate Object-Oriented Programming con
 - PayrollSystem.java - Core manager class
 - PayrollReports.java - Generate reports
 - PayrollDatabase.java - Save/load to file
-- Main.java - Entry point
+- Main.java - Entry point with interactive menu
 
 ## OOP Concepts Used
 
@@ -34,8 +40,19 @@ A Java-based payroll system built to demonstrate Object-Oriented Programming con
 
 ## Sample Output
 
+===== PAYROLL SYSTEM =====
+1. Add Full-Time Employee
+2. Add Part-Time Employee
+3. Remove Employee
+4. Display All Employees
+5. Process Payroll
+6. Exit
+Choose: 4
+
+No employees found in the system.
+
 === PAY SLIP ===
-Month: May 2026
+Month: June 2026
 Employee: Mohammed Saad (ID: 101)
 Gross Salary: $155000.00
 Tax: $31000.00

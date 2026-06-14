@@ -12,10 +12,6 @@ A Java-based payroll system with interactive menu, built to demonstrate Object-O
 - Save/Load employee data from files automatically
 - Monthly and department-wise reports
 
-## How to Run
-
-javac *.java
-java Main
 
 ## Project Files
 
